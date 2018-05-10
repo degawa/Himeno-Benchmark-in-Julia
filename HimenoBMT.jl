@@ -22,9 +22,9 @@ mimax, mjmax, mkmax = size(p)
     Δp   = 0.0f0
     for loop in 1:numItr
         ε = 0.0f0
-        for k in 2:kmax-1
-        for j in 2:jmax-1
-        for i in 2:imax-1
+        @inbounds for k in 2:kmax-1
+        @inbounds for j in 2:jmax-1
+        @inbounds for i in 2:imax-1
             pⁿ⁺¹ =  a[i,j,k,1 ]*  p[i+1,j  ,k  ]
                    +a[i,j,k,2 ]*  p[i  ,j+1,k  ]
                    +a[i,j,k,3 ]*  p[i  ,j  ,k+1]
