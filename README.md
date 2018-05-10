@@ -12,6 +12,7 @@ This program was simply rewritten into Julia from [a program](https://github.com
 
 ## Demo
 ![Demo](./demo.png)
+The execution performance have been significantly improved. (10th May 2018)
 
 ## Requirement
 Julia 0.6.2
